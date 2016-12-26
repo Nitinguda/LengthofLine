@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.niu.cs.z1760203.lengthofline.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="X1 :"
+        android:id="@+id/textViewX1"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textViewY1"
+        android:layout_alignStart="@+id/textViewY1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextX1"
+        android:layout_alignTop="@+id/textViewX1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="X2 :"
+        android:id="@+id/textViewX2"
+        android:layout_below="@+id/editTextX1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextX2"
+        android:layout_alignTop="@+id/textViewX2"
+        android:layout_alignLeft="@+id/editTextX1"
+        android:layout_alignStart="@+id/editTextX1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Y1 :"
+        android:id="@+id/textViewY1"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/editTextX2"
+        android:layout_alignRight="@+id/textViewX2"
+        android:layout_alignEnd="@+id/textViewX2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextY1"
+        android:layout_alignTop="@+id/textViewY1"
+        android:layout_alignLeft="@+id/editTextX2"
+        android:layout_alignStart="@+id/editTextX2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Y2 :"
+        android:id="@+id/textViewY2"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/editTextY1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextY2"
+        android:layout_alignTop="@+id/textViewY2"
+        android:layout_alignLeft="@+id/editTextY1"
+        android:layout_alignStart="@+id/editTextY1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mid-Point :"
+        android:id="@+id/midPoint"
+        android:layout_below="@+id/editTextY2"
+        android:layout_alignLeft="@+id/textViewY1"
+        android:layout_alignStart="@+id/textViewY1"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewMid"
+        android:layout_alignBottom="@+id/midPoint"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/midPoint"
+        android:layout_toEndOf="@+id/midPoint"
+        android:hint="@string/hint1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Length :"
+        android:id="@+id/length"
+        android:layout_below="@+id/midPoint"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewLen"
+        android:layout_alignBottom="@+id/length"
+        android:layout_toRightOf="@+id/length"
+        android:layout_alignRight="@+id/textViewMid"
+        android:layout_alignEnd="@+id/textViewMid"
+        android:hint="@string/hint2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/cal"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textViewY2"
+        android:layout_toEndOf="@+id/textViewY2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/clear"
+        android:layout_alignTop="@+id/cal"
+        android:layout_alignRight="@+id/textViewLen"
+        android:layout_alignEnd="@+id/textViewLen"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp" />
+
+</RelativeLayout>

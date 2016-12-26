@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Length of Line</string>
+    <string name="hint1">Value of Mid-Point!</string>
+    <string name="hint2">Value of Length!!</string>
+</resources>
